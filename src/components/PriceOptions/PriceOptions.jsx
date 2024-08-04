@@ -6,7 +6,7 @@ const PriceOptions = () => {
   const priceOptions = [
     {
       "id": 1,
-      "name": "Basic",
+      "name": "Basic Membership",
       "price": 30,
       "currency": "USD",
       "features": [
@@ -17,7 +17,7 @@ const PriceOptions = () => {
     },
     {
       "id": 2,
-      "name": "Standard",
+      "name": "Standard Membership",
       "price": 50,
       "currency": "USD",
       "features": [
@@ -30,7 +30,7 @@ const PriceOptions = () => {
     },
     {
       "id": 3,
-      "name": "Premium",
+      "name": "Premium Membership",
       "price": 70,
       "currency": "USD",
       "features": [
@@ -45,7 +45,7 @@ const PriceOptions = () => {
     },
     {
       "id": 4,
-      "name": "VIP",
+      "name": "VIP Membership",
       "price": 100,
       "currency": "USD",
       "features": [
@@ -65,10 +65,13 @@ const PriceOptions = () => {
 
     return (
         <div>
-            {
-                priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-            }
-            <h2 className="text-2xl">Best Prices</h2>
+            <h2 className="text-4xl text-orange-500 my-4">Best Prices : </h2>
+            <div className='grid md:grid-cols-3 gap-5'>
+                {
+                    priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
+                }
+            </div>
+            
         </div>
     );
 };
