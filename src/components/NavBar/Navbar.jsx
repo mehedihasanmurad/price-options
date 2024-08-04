@@ -1,8 +1,6 @@
-import { list } from 'postcss';
 import React, { useState } from 'react';
 import Link from '../Link/Link';
 import { AiOutlineAlignLeft , AiOutlineClose } from "react-icons/ai";
-// import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
     const [open,setOpen] = useState(false);
